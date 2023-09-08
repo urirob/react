@@ -1,0 +1,27 @@
+->package.json is an important file. It locks the version. You never have to get ignored
+
+->never put package-lock in git-ignore
+
+->package-lock.json keeps th exact version being used, it maintains the hash of the version being used, this ensures th exact version of parcel which is being running, running in our system is getting running on the production too
+
+->node modules--> database of npm
+
+->you have to put node_modules in git-ignore (because node_modules took too much memory)
+
+->package.json and package-lock.json has enough code to replicate all the requirements from node_modules for our project, so there is only requirement to store package-lock.json and package.json in our project 
+
+->never try to edit node-modules,package-lock.json,package.json 
+
+->dist- keeps the code minified for us 
+
+->we should put parcel-cache in git-ignore 
+
+->dist folder can be created using npx parcel idnex.html
+
+->node modules can be created by command-> npm install node
+ 
+->transtitive dependicies 
+
+-> depedency tree -> our app is not just about react and bundler(parcel for e.g.) , its consits of other depedencies on further, which is called as transitive dependicies and the tree of depdendices is called depedency tree  
+
+-> to make react code compatible with older browser version, we will insert browser list from npm.js website into package-json 
