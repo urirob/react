@@ -1,0 +1,58 @@
+(learn about git, and to implement the git commmads in your project)
+
+->commmand to intialize npm-> npm install  -> will create package.json-> to manage dependencies -> there are two type of dependicies -> normal dependency and dev-dependency 
+
+->pollyfill -> converting our code so that it can be compatible with the older versions of the browsers too 
+(and the this conversion of code into older code is done by babel(javascript package)) 
+
+->we don't need to write pollyfills, they are done by babel itself
+
+->tree shaking- lets the js package which is installed is already providing 20 helper functions in its package, but in the code there is requirement of 5 helper functions only, so tree shaking is a property by which there is removal of rest of unused functions from its js package
+
+->npx is similar to npm, but the difference is that npx is executing the package without downloading it (npx similar to npm run)
+
+->shortcut to npm run start -> npm start 
+
+->parcel also removes the console.log()-> babel plugin transform remove console helps us to remove all console.log() from the code 
+and while installing a package we need to need to check whehter we need that package as dev dependency ir normal dependency,
+installing the package in package.json will not work, we will require it to configure it as well  -> babel.rc is configuration for the babel 
+
+->render-> updating something in the dom
+
+->react keeps the track of the key
+
+//<---------------------------------------------------------------->
+
+IMPORTANT->
+->jsx is html inside the javascript --> false
+jsx is html type syntax inside the javascript code  (jsx developed by facebook developers)
+
+->jsx uses camelcasing (for e.g. timArthur for the name Tim Arthur)
+
+->jsx is not package, it's a syntax 
+
+->jsx requires babel as its depedency so as to work correctly
+
+//<---------------------------------------------------------------->
+
+->JSX=> uses React.createElement => Object => HTML(DOM)     (Babel do all this process)
+
+-> babel comes along parcel as depedency
+
+-> name of functional component or any component starts with capital letter - its not mandatory but its a good practice 
+
+-> functional component  is a normal function, returning piece of jsx or react component 
+
+-> difference between react element and react component is react element is a normal variable and react component is a functional component which is a js function 
+
+->to render functional component need to write write it in angular brackets in root.render()
+->to render react element in root.render() just type its name in root.render()
+
+
+
+
+
+
+
+
+
