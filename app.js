@@ -1,78 +1,113 @@
-/*
-USAGES OF PARCEL(IT IS A BUNDLER)-->
+            /*
+            Header
+                -Logo
+                -Nav Items(Right side)
+                -Cart
 
-*HMR --> HOT MODULE REPLACEMENT 
+            Body
+            -Search Bar
+            -Restraunlist
+                -Restaurant Card
+                    -Image
+                    -Name
+                    -Rating
+                    -Cuisines
+            Footer
+            -Links
+            -Copyright
 
-*FILE WATCHER ALGORITHMS - WRITTEN IN C++
-
-*BUNDLING
-
-*MINIFY
-
-*CLEANING OUR CODE
-
-*DEV AND PRODUCTION BUILD
-
-*SUPER FAST BUILD ALGORITHM
-
-*IMAGE OPTIMISATION
-
-*CACHING WHILE DEVELOPMENT
-
-*COMPRESSION
-
-*COMPATIBLE WITH OLDER VERSION OF THE BROWSER 
-
-*HTTPS ON DEV MACHINE
-
-*PORT NUMBER 
-
-*CONSISTENT HASHING ALGORITHM THAT PARCEL USES FOR DOING BUNDLING
-
-*ZERO CONFIG
-
-
-*/
-
-
+            */
 import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM, {createRoot} from "react-dom/client";
+// import ReactDOM from "react-dom/client" 
 
-const heading=React.createElement(
-    "h1",
-    {
-        id:"title",
-    },
+const Title=()=>(
 
-    "Heading 1 for parcel"
+    <img alt="logo" 
+    src="https://e7.pngegg.com/pngimages/798/4/png-clipart-take-out-foodpanda-logo-tagline-brand-delivery-food-food-text-thumbnail.png"
+    />
+
+    // <h1 id="title" key="h2">
+    //     Food Panda React 
+
+    // </h1>
 );
 
-const heading2=React.createElement(
-    "h2",
-    {
-        id:"title",
-    },
+//Composing Components
 
-    "Heading 2"
-);
+const HeaderComponent=()=>{
+    return(
+        <div className="header">
+            <Title />
+            <div className="nav-items">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Cart</li>
+                </ul>
 
-const container=React.createElement(
-    "div",
-    {
-        id:"container",
-        hello:"world",
-    },
+            </div>
+            {
+            //This is a comment
+            /*
+            *
+            *
+            * 
+            * Multi Line Comment
+            * 
+            * Is JSX mandatory? -> No
+            * 
+            * Is ES6 mandatory?-> No  
+            *
+            *
+            */
+            
+                
+            }
+        </div>
 
-    [heading,heading2]
+    );
 
-);
+};
+
+const AppLayout=()=>{
+    return(
+        {
+           
+
+        }
+    );
+};
+
+
+const HeaderComponent1=()=>{
+    return(
+        <div>
+            <Title />
+            <h2>
+                Namaste React Functional Component
+            </h2>
+
+            <h2>
+                This is a h2 tag
+            </h2>
+
+        </div>
+
+    );
+
+};
 
 
 
-console.log(heading);
 
 const root=ReactDOM.createRoot(document.getElementById("root"));
-// passing a react element 
 
-//async defer
-root.render(container);
+root.render(<HeaderComponent />);
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+name of the project-> food villa
+
+command to start the project-> npm start
+
+jsx use behind the scene -> React.createElement (hence jsx is not mandatory)
+Babel-> compiler/transcompiler
+
+we built functional component-> which is a function returning jsx, when there is mulitple lines the we write return with round brackets with a semicolon  
+
+
+<Title /> -> it is called as self closing tag
+
+
+
+
+
+
+
+
+
+
+
